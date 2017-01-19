@@ -26,3 +26,8 @@ Route::get('/submit', function()
 });
 
 Route::resource('events', 'MyEventController');
+
+Route::get('/eventmap', function()
+{
+    return view('eventmap');
+});
