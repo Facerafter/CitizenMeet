@@ -48,13 +48,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="{{ url('/events') }}">Events</a>
+                        <a href="{{ url('/events') }}">Event List</a>
                     </li>
                     <li>
-                        <a href="{{ url('/submit') }}">Submit </a>
+                        <a href="{{ url('/eventmap') }}">Event Map</a>
                     </li>
                     <li>
-                        <a href="{{ url('/contact') }}">Contact</a>
+                        <a href="{{ url('/submit') }}">Submit Event </a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Knowledgebase<b class="caret"></b></a>
