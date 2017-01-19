@@ -166,7 +166,6 @@ return [
         /*
          * Package Service Providers...
          */
-        UxWeb\SweetAlert\SweetAlertServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Cornford\Googlmapper\MapperServiceProvider::class,
         //Storage\StorageServiceProvider::class,
@@ -197,7 +196,6 @@ return [
 
     'aliases' => [
 
-        'Alert' => UxWeb\SweetAlert\SweetAlert::class,
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
