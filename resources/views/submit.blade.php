@@ -4,9 +4,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">Submit
-            <small>Events</small>
-        </h1>
+        <h1 class="page-header">Submit Event</h1>
         <ol class="breadcrumb">
             <li><a href="{{ url('/') }}">Home</a>
             </li>

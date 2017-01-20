@@ -51,7 +51,7 @@
                         <a href="{{ url('/events') }}">Event List</a>
                     </li>
                     <li>
-                        <a href="{{ url('/eventmap') }}">Event Map</a>
+                        <a href="{{ url('/eventmap') }}">Event Worldmap</a>
                     </li>
                     <li>
                         <a href="{{ url('/submit') }}">Submit Event </a>
