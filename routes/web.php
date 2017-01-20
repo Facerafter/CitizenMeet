@@ -31,3 +31,8 @@ Route::get('/eventmap', function()
 {
     return view('eventmap');
 });
+
+Route::get('/view', function()
+{
+    return view('view');
+});
