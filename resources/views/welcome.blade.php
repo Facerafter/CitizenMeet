@@ -18,9 +18,9 @@
                     </div>
                     <div class="panel-body">
                         <p>
-                          <i class="fa fa-calendar" aria-hidden="true"></i> <h4>Date</h4>
+                          <h5><i class="fa fa-calendar" aria-hidden="true"></i> Date</h5>
                           {{ $event->date}} - {{ $event->starttime }}<br>
-                          <i class="fa fa-map-marker" aria-hidden="true"></i><h4>Location</h4>
+                          <h5><i class="fa fa-map-marker" aria-hidden="true"></i> Location</h5>
                           {{ $event->address}}<br>
                           {{$event->state}} {{ $event->country}}
                         </p>
