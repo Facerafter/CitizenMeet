@@ -27,12 +27,4 @@ Route::get('/submit', function()
 
 Route::resource('events', 'MyEventController');
 
-Route::get('/eventmap', function()
-{
-    return view('eventmap');
-});
-
-Route::get('/view', function()
-{
-    return view('view');
-});
+Route::get('/eventmap', 'MapController@index');

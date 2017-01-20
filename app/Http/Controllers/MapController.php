@@ -1,3 +1,4 @@
+<?php
 namespace App\Http\Controllers;
 
 use Cornford\Googlmapper\Facades\MapperFacade as Mapper;
@@ -7,9 +8,9 @@ class ViewController extends Controller
 
     public function index()
     {
-        Mapper::map(53.381128999999990000, -1.470085000000040000);
+        Mapper::map(0, 0,['zoom'=>3, 'marker'=>false]);
 
-        return view('view');
+        return view('eventmap');
     }
 
 }
