@@ -123,7 +123,7 @@ return array(
     | Set if fullscreen control should be displayed by Googlmapper.
     |
     */
-    'fullscreenControl' => true,
+    'fullscreenControl' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -133,7 +133,7 @@ return array(
     | Set the default Googlmapper displayed map type. (ROADMAP|SATELLITE|HYBRID|TERRAIN)
     |
     */
-    'type' => 'ROADMAP',
+    'type' => 'HYBRID',
 
     /*
     |--------------------------------------------------------------------------

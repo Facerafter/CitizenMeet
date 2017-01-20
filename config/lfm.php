@@ -2,12 +2,12 @@
 
 return [
     // If true, the uploaded file will be renamed to uniqid() + file extension.
-    'rename_file'           => false,
+    'rename_file'           => true,
 
     // If rename_file set to false and this set to true, then non-alphanumeric characters in filename will be replaced.
     'alphanumeric_filename' => true,
     // If true, non-alphanumeric folder name will not be allowed.
-    'alphanumeric_directory' => false,
+    'alphanumeric_directory' => true,
 
     'use_package_routes'    => true,
 
@@ -30,8 +30,8 @@ return [
     'shared_folder_name'    => 'shares',
     'thumb_folder_name'     => 'thumbs',
 
-    'images_dir'            => 'public/photos/',
-    'images_url'            => '/photos/',
+    'images_dir'            => 'public/images/',
+    'images_url'            => '/images/',
     'images_startup_view'   => 'list',
 
     'files_dir'             => 'public/files/',
