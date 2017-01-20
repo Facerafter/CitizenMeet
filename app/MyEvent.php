@@ -10,6 +10,6 @@ class MyEvent extends Model
 
     public static function getFullAddress()
     {
-      return $this->address." ".$this->city;
+      return MyEvent::all()->address." ".MyEvent::all()->city;
     }
 }
