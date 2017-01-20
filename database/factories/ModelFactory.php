@@ -35,7 +35,6 @@ $factory->define(App\MyEvent::class, function (Faker\Generator $faker)
     'address' => $faker->streetAddress,
     'date' => $faker->date,
     'starttime' => $faker->time,
-    'endtime' => $faker->time,
     'approved' => $faker->boolean,
     'expired' => $faker->boolean,
   ];

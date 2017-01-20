@@ -18,8 +18,10 @@
                     </div>
                     <div class="panel-body">
                         <p>
-                          When? <br>{{ $event->date}} - {{ $event->starttime }}<br>
-                          Where?<br> {{ $event->address}}<br>
+                          <i class="fa fa-calendar" aria-hidden="true"></i> <h4>Date</h4>
+                          {{ $event->date}} - {{ $event->starttime }}<br>
+                          <i class="fa fa-map-marker" aria-hidden="true"></i><h4>Location</h4>
+                          {{ $event->address}}<br>
                           {{$event->state}} {{ $event->country}}
                         </p>
                         <a href="{{ $event->url }}" class="btn btn-primary">Website</a>
