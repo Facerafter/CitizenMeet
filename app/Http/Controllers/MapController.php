@@ -8,7 +8,7 @@ class MapController extends Controller
 
     public function index()
     {
-        Mapper::map(0, 0,['zoom'=>3, 'marker'=>false]);
+        Mapper::map(38.610398238551156, -28.256835935000026,['zoom'=>3, 'marker'=>false]);
 
         return view('eventmap');
     }

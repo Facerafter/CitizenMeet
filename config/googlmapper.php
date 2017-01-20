@@ -71,7 +71,7 @@ return array(
     | Googlmapper displayed map.
     |
     */
-    'marker' => true,
+    'marker' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
     | location.
     |
     */
-    'locate' => false,
+    'locate' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -103,7 +103,7 @@ return array(
     | The default zoom level Googlmapper should use.
     |
     */
-    'zoom' => 8,
+    'zoom' => 5,
 
     /*
     |--------------------------------------------------------------------------
@@ -133,7 +133,7 @@ return array(
     | Set the default Googlmapper displayed map type. (ROADMAP|SATELLITE|HYBRID|TERRAIN)
     |
     */
-    'type' => 'HYBRID',
+    'type' => 'TERRAIN',
 
     /*
     |--------------------------------------------------------------------------
@@ -173,7 +173,7 @@ return array(
         | Display an animation effect for markers. (NONE|DROP|BOUNCE)
         |
         */
-        'animation' => 'NONE',
+        'animation' => 'DROP',
 
     ),
 
