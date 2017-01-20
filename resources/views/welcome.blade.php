@@ -17,12 +17,11 @@
                         <h4><i class="fa fa-fw fa-info-circle"></i> {{ $event->city}} </h4>
                     </div>
                     <div class="panel-body">
-                        <ul>
-                          <li>Date: {{ $event->date}}</li>
-                          <li>Time: {{ $event->starttime}} - {{ $event->endtime}}</li>
-                          <li>Address: {{ $event->address}}</li>
-                          <li>Postcode: {{ $event->postcode}}</li>
-                        </ul>
+                        <p>
+                          When? <br>{{ $event->date}} - {{ $event->starttime }}<br>
+                          Where?<br> {{ $event->address}}<br>
+                          {{$event->state}} {{ $event->country}}
+                        </p>
                         <a href="{{ $event->url }}" class="btn btn-primary">Website</a>
                     </div>
                 </div>

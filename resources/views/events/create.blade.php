@@ -39,15 +39,20 @@
             {!! Form::text('city', null, ['class' => 'form-control', 'required' => 'required']) !!}
             <small class="text-danger">{{ $errors->first('city') }}</small>
         </div>
-        <div class="form-group{{ $errors->has('postcode') ? ' has-error' : '' }}">
-            {!! Form::label('postcode', 'Venue Postcode') !!}
-            {!! Form::text('postcode', null, ['class' => 'form-control', 'required' => 'required']) !!}
-            <small class="text-danger">{{ $errors->first('postcode') }}</small>
-        </div>
         <div class="form-group{{ $errors->has('address') ? ' has-error' : '' }}">
             {!! Form::label('address', 'Venue Address') !!}
             {!! Form::text('address', null, ['class' => 'form-control', 'required' => 'required']) !!}
             <small class="text-danger">{{ $errors->first('address') }}</small>
+        </div>
+        <div class="form-group{{ $errors->has('state') ? ' has-error' : '' }}">
+            {!! Form::label('state', 'State') !!}
+            {!! Form::text('state', null, ['class' => 'form-control']) !!}
+            <small class="text-danger">{{ $errors->first('state') }}</small>
+        </div>
+        <div class="form-group{{ $errors->has('country') ? ' has-error' : '' }}">
+            {!! Form::label('country', 'Country') !!}
+            {!! Form::text('country', null, ['class' => 'form-control', 'required' => 'required']) !!}
+            <small class="text-danger">{{ $errors->first('country') }}</small>
         </div>
         <div class="form-group{{ $errors->has('date') ? ' has-error' : '' }}">
             {!! Form::label('date', 'Event Date') !!}

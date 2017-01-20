@@ -19,8 +19,9 @@ class CreateEventsTable extends Migration
             $table->string('organiseremail');
             $table->string('url');
             $table->string('city');
-            $table->string('postcode');
             $table->string('address');
+            $table->string('country');
+            $table->string('state');
             $table->date('date');
             $table->time('starttime');
             $table->time('endtime');

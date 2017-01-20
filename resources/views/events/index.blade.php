@@ -21,11 +21,11 @@
           <th>Organiser Email</th>
           <th>Event URL</th>
           <th>Venue City</th>
-          <th>Venue Postcode</th>
           <th>Venue Address</th>
+          <th>Venue State</th>
+          <th>Venue Country</th>
           <th>Event Date</th>
           <th>Event Start Time</th>
-          <th>Event End Time</th>
           <th>Approved</th>
           <th>Expired</th>
         </tr>
@@ -38,11 +38,11 @@
           <td>{{ $event->organiseremail }}</td>
           <td>{{ $event->url }}</td>
           <td>{{ $event->city }}</td>
-          <td>{{ $event->postcode }}</td>
           <td>{{ $event->address }}</td>
+          <td>{{ $event->state }}</td>
+          <td>{{ $event->country }}</td>
           <td>{{ $event->date }}</td>
           <td>{{ $event->starttime }}</td>
-          <td>{{ $event->endtime }}</td>
           <td>{{ $event->approved }}</td>
           <td>{{ $event->expired }}</td>
         </tr>
