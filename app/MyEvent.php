@@ -8,7 +8,7 @@ class MyEvent extends Model
 {
     protected $table = 'events';
 
-    public function getFullAddress()
+    public static function getFullAddress()
     {
       return $this->address." ".$this->city;
     }
