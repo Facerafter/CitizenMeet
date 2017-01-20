@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">Create Event</h1>
@@ -30,7 +31,7 @@
         </tr>
       </thead>
       <tbody>
-        @foreach ($events as $event)
+        @foreach ($myevents as $event)
         <tr>
           <td>{{ $event->id }}</td>
           <td>{{ $event->organisername }}</td>
@@ -47,4 +48,7 @@
         </tr>
         @endforeach
       </tbody>
+    </table>
+  </div>
+</div>
 @endsection
