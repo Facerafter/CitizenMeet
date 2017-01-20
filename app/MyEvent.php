@@ -10,6 +10,6 @@ class MyEvent extends Model
 
     public static function getFullAddressAttribute()
     {
-      return$this->attributes['address'} ."". $this->attributes['city'];
+      return$this->attributes['address'] ."". $this->attributes['city'];
     }
 }
