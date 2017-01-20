@@ -8,8 +8,8 @@ class MyEvent extends Model
 {
     protected $table = 'events';
 
-    public static function getFullAddress()
+    public static function getFullAddressAttribute()
     {
-      return MyEvent::all()->address." ".MyEvent::all()->city;
+      return$this->attributes['address'} ."". $this->attributes['city'];
     }
 }
