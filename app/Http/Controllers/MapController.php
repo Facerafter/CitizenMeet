@@ -13,7 +13,8 @@ class MapController extends Controller
         $events = MyEvent::where('approved', 1)->where('expired', 0)->get();
         $events = $events->pluck('MyEventFullAddress', 'Tenant_Id');
         foreach ($events as $event) {
-          Mapper::location($event)->marker();
+          $geoData = Mapper::location($event);
+          Mapper:marker($geoDate[1],$geoData[2])
         }
         foreachMyEvent::find($id)->delete();
 
