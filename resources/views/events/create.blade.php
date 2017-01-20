@@ -4,22 +4,21 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">Submit Event</h1>
+        <h1 class="page-header">Create Event</h1>
         <ol class="breadcrumb">
-            <li><a href="{{ url('/') }}">Home</a>
-            </li>
-            <li class="active">Submit</li>
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ url('/events') }}">Events</a></li>
+            <li class="active">Create</li>
         </ol>
     </div>
 </div>
 <!-- /.row -->
 
 <!-- Contact Form -->
-<!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
   <div class="row">
     <div class="col-md-8">
         <h3>Submit your event for approval</h3>
-        {!! Form::open(['method' => 'POST', 'class' => 'form-horizontal']) !!}
+        {!! Form::open(['url' => 'events']) !!}
         <div class="form-group{{ $errors->has('organisername') ? ' has-error' : '' }}">
             {!! Form::label('organisername', 'Organiser Name') !!}
             {!! Form::text('organisername', null, ['class' => 'form-control', 'required' => 'required']) !!}
@@ -61,7 +60,6 @@
                 {!! Form::submit("Submit an event", ['class' => 'btn btn-success']) !!}
             </div>
         {!! Form::close() !!}
-
     </div>
   </div>
   @endsection
