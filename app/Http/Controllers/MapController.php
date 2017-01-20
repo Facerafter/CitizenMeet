@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 
 use Cornford\Googlmapper\Facades\MapperFacade as Mapper;
 
-class ViewController extends Controller
+class MapController extends Controller
 {
 
     public function index()
