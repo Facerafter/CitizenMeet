@@ -13,6 +13,6 @@ class MyEventTest extends TestCase
     }
     public function testWeSeeAMyEventForm()
     {
-      $this->visit('/submit')->see('Venue City');
+      $this->visit('/event/create')->see('Venue City');
     }
 }
