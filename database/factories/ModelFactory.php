@@ -30,8 +30,6 @@ $factory->define(App\MyEvent::class, function (Faker\Generator $faker)
     'organiseremail' => $faker->safeEmail,
     'url' => $faker->url,
     'city' => $faker->city,
-    'country' => $faker->country,
-    'state' => $faker->state,
     'address' => $faker->streetAddress,
     'date' => $faker->date,
     'starttime' => $faker->time,

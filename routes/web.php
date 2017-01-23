@@ -20,11 +20,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/submit', function()
+Route::get('/submit', 'MyEventController@create');
+
+Route::get('/events', 'MyEventController@index');
+
+Route::get('/eventmap', function()
 {
-    return view('submit');
+    return view('eventmap');
 });
-
-Route::resource('events', 'MyEventController');
-
-Route::get('/eventmap', 'MapController@index');
