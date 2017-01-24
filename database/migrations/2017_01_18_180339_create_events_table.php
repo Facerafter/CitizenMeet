@@ -17,13 +17,16 @@ class CreateEventsTable extends Migration
             $table->increments('id');
             $table->string('organisername');
             $table->string('organiseremail');
-            $table->string('title');
             $table->string('url');
             $table->string('city');
+            $table->string('address');
+            $table->string('country');
+            $table->string('state');
             $table->date('date');
             $table->time('starttime');
-            $table->boolean('approved')->default('0');
-            $table->boolean('expired')->default('0');
+            $table->time('endtime');
+            $table->boolean('approved');
+            $table->boolean('expired');
             $table->timestamps();
         });
     }
