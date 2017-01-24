@@ -18,10 +18,12 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('home', 'HomeController@index');
 
-Route::get('/submit', 'MyEventController@create');
+Route::get('submit', 'MyEventController@create');
 
-Route::get('/events', 'MyEventController@index');
+Route::post('submit', ['as'=>'submit.store','uses'=>'MyEventController@store']);
 
-Route::get('/eventmap', 'MapController@index');
+Route::get('events', 'MyEventController@index');
+
+Route::get('eventmap', 'MapController@index');

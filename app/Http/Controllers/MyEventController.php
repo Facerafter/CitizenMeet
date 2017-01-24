@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Request;
 use App\MyEvent;
 
 class MyEventController extends Controller
@@ -26,7 +26,7 @@ class MyEventController extends Controller
      */
     public function create()
     {
-        return view('events.submit');
+        return view('submit');
     }
 
     /**
@@ -38,6 +38,7 @@ class MyEventController extends Controller
     public function store(Request $request)
     {
         $myevent=Request::all();
+        $myevent->title=$myevent->city;
         MyEvent::create($myevent);
         return redirect('events');
     }
