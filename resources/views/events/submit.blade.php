@@ -8,7 +8,7 @@
         <ol class="breadcrumb">
             <li><a href="{{ url('/') }}">Home</a></li>
             <li><a href="{{ url('/events') }}">Events</a></li>
-            <li class="active">Create</li>
+            <li class="active">Submit</li>
         </ol>
     </div>
 </div>
@@ -31,7 +31,7 @@
         </div>
         <div class="form-group{{ $errors->has('url') ? ' has-error' : '' }}">
             {!! Form::label('url', 'Event Site') !!}
-            {!! Form::text('url', null, ['class' => 'form-control' ]) !!}
+            {!! Form::url('url', null, ['class' => 'form-control' ]) !!}
             <small class="text-danger">{{ $errors->first('url') }}</small>
         </div>
         <div class="form-group{{ $errors->has('city') ? ' has-error' : '' }}">
@@ -58,6 +58,11 @@
             {!! Form::label('date', 'Event Date') !!}
             {!! Form::date('date', null, ['class' => 'form-control', 'required' => 'required']) !!}
             <small class="text-danger">{{ $errors->first('date') }}</small>
+        </div>
+        <div class="form-group{{ $errors->has('starttime') ? ' has-error' : '' }}">
+            {!! Form::label('starttime', 'Event Start Time') !!}
+            {!! Form::time('starttime', null, ['class' => 'form-control', 'required' => 'required']) !!}
+            <small class="text-danger">{{ $errors->first('starttime') }}</small>
         </div>
 
             <div class="btn-group pull-right">

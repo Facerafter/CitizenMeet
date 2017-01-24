@@ -7,9 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class MyEvent extends Model
 {
     protected $table = 'events';
-
-    public static function getFullAddressAttribute()
-    {
-      return$this->attributes['address'] ."". $this->attributes['city'];
-    }
+    protected $fillable = ['organisername', 'organiseremail', 'title', 'url', 'city', 'address','date','starttime','state','country','approved','expired'];
 }
