@@ -25,8 +25,8 @@ class CreateEventsTable extends Migration
             $table->string('state');
             $table->date('date');
             $table->time('starttime');
-            $table->boolean('approved');
-            $table->boolean('expired');
+            $table->boolean('approved')->default(0);
+            $table->boolean('expired')->default(0);
             $table->timestamps();
         });
     }
