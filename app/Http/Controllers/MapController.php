@@ -13,7 +13,7 @@ class MapController extends Controller
         $events = MyEvent::where('approved', 1)->where('expired', 0)->get();
         foreach ($events as $event) {
           $geoData = Mapper::location($event->city);
-          Mapper:marker($geoData->getLatitude(),$geoData->getLongitude());
+          Mapper::marker($geoData->getLatitude(),$geoData->getLongitude());
         }
         return view('eventmap');
     }
