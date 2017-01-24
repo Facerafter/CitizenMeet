@@ -11,13 +11,10 @@ class MapController extends Controller
     {
         Mapper::map(38.610398238551156, -28.256835935000026,['zoom'=>3, 'marker'=>false]);
         $events = MyEvent::where('approved', 1)->where('expired', 0)->get();
-        $events = $events->pluck('MyEventFullAddress', 'Tenant_Id');
         foreach ($events as $event) {
-          $geoData = Mapper::location($event);
-          Mapper:marker($geoDate[1],$geoData[2])
+          $geoData = Mapper::location($event->city);
+          Mapper:marker($geoData->getLatitude(),$geoData->getLongitude())
         }
-        foreachMyEvent::find($id)->delete();
-
         return view('eventmap');
     }
 
